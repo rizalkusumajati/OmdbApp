@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OmdbApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_title">Find Movies, TV shows and more ...</string>
+    <string name="logo_text">OMDB</string>
+    <string name="hint_query">Search movies ...</string>
+</resources>

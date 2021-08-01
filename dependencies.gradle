@@ -1,0 +1,97 @@
+ext.versions = [
+        androidGradlePluginVersion: "4.2.0",
+        kotlinGradlePluginVersion : "1.4.30",
+        hiltGradlePluginVersion   : "2.38.1",
+        coreKtxVersion            : "1.6.0",
+        appcompatVersion          : "1.3.0",
+        constraintlayoutVersion   : "2.0.4",
+        materialVersion           : "1.4.0",
+        junitVersion              : "4.13",
+        androidTestJunitVersion   : "1.1.3",
+        espressoVersion           : "3.3.0",
+        retrofitVersion           : "2.9.0",
+        hiltVersion               : "2.38.1",
+        loggingInterceptorVersion : "4.9.1",
+        coroutineVersion          : "1.3.9",
+        viewModelLifecycleVersion : "2.2.0",
+        navigationVersion         : "2.3.5",
+        recyclical                : '1.1.1',
+        recyclerViewDivider       : '3.3.0',
+        intuitVersion             : "1.0.6",
+        glideVersion              : "4.12.0",
+        coroutineTestVersion      : "1.5.0",
+        mockKVersion              : "1.10.6",
+        archCoreTestVersion       : "2.1.0",
+        truthVersion              : "1.1.2",
+        fragmentTestVersion       : "1.3.3",
+        idlingResourceVersion     : "1.0.0",
+]
+ext.deps = [
+        gradlePlugin : [
+                "com.android.tools.build:gradle:$versions.androidGradlePluginVersion",
+                "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlinGradlePluginVersion",
+                "com.google.dagger:hilt-android-gradle-plugin:$versions.hiltGradlePluginVersion",
+                "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navigationVersion"
+        ],
+        kotlin             : [
+                "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlinGradlePluginVersion",
+                "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutineVersion"
+        ],
+        androidx           : [
+                "androidx.core:core-ktx:$versions.coreKtxVersion",
+                "androidx.appcompat:appcompat:$versions.appcompatVersion",
+                "androidx.constraintlayout:constraintlayout:$versions.constraintlayoutVersion",
+                "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.viewModelLifecycleVersion",
+                "androidx.navigation:navigation-fragment-ktx:$versions.navigationVersion",
+                "androidx.navigation:navigation-ui-ktx:$versions.navigationVersion"
+        ],
+        google             : [
+                "com.google.android.material:material:$versions.materialVersion",
+                "com.google.dagger:hilt-android:$versions.hiltVersion"
+        ],
+        network            : [
+                "com.squareup.retrofit2:retrofit:$versions.retrofitVersion",
+                "com.squareup.retrofit2:converter-moshi:$versions.retrofitVersion",
+                "com.squareup.okhttp3:logging-interceptor:$versions.loggingInterceptorVersion"
+        ],
+        util               : [
+                "com.intuit.sdp:sdp-android:$versions.intuitVersion",
+                "com.afollestad:recyclical:$versions.recyclical",
+                "com.github.fondesa:recycler-view-divider:$versions.recyclerViewDivider",
+                "com.github.bumptech.glide:glide:$versions.glideVersion",
+                "com.github.bumptech.glide:compiler:$versions.glideVersion",
+
+        ],
+        compiler           : [
+                "com.google.dagger:hilt-compiler:$versions.hiltVersion"
+        ],
+        unitTestCompiler   : [
+                "com.google.dagger:hilt-compiler:$versions.hiltVersion"
+        ],
+        androidTestCompiler: [
+                "com.google.dagger:hilt-compiler:$versions.hiltVersion"
+        ],
+        unitTest           : [
+                "junit:junit:$versions.junitVersion",
+                "com.google.dagger:hilt-android-testing:$versions.hiltVersion",
+                "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutineTestVersion",
+                "io.mockk:mockk:$versions.mockKVersion",
+                "androidx.arch.core:core-testing:$versions.archCoreTestVersion",
+                "com.google.truth:truth:$versions.truthVersion"
+        ],
+        androidTest        : [
+                "androidx.test.ext:junit:$versions.androidTestJunitVersion",
+                "androidx.test.espresso:espresso-core:$versions.espressoVersion",
+                "com.google.dagger:hilt-android-testing:$versions.hiltVersion",
+                "androidx.navigation:navigation-testing:$versions.navigationVersion",
+                "com.squareup.okhttp3:mockwebserver:$versions.loggingInterceptorVersion",
+                "androidx.fragment:fragment-testing:$versions.fragmentTestVersion",
+                "androidx.navigation:navigation-testing:$versions.navigationVersion",
+                "androidx.test.espresso:espresso-contrib:$versions.espressoVersion",
+                "com.google.truth:truth:$versions.truthVersion"
+
+        ],
+        debugTest : [
+                "androidx.test.espresso:espresso-idling-resource:$versions.espressoVersion",
+        ]
+]
